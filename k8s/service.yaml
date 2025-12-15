@@ -4,11 +4,11 @@ metadata:
   name: argocd-demo-service
   namespace: 13th
 spec:
-  type: LoadBalancer  # Hoặc NodePort cho local
+  type: NodePort  # Hoặc LoadBalancer for cloud
   selector:
     app: argocd-demo
   ports:
   - protocol: TCP
     port: 80
     targetPort: 80
-    # nodePort: 30080  # Uncomment nếu dùng NodePort
+    nodePort: 30080  # Uncomment nếu dùng NodePort

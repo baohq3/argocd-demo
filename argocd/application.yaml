@@ -7,7 +7,7 @@ spec:
   project: default
   
   source:
-    repoURL: https://github.com/your-username/argocd-demo.git  # Thay đổi repo của bạn
+    repoURL: https://github.com/baohq3/argocd-demo.git  # Thay đổi repo của bạn
     targetRevision: main  # Hoặc master
     path: k8s
   

@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: argocd-demo-service
-  namespace: default
+  namespace: 13th
 spec:
   type: LoadBalancer  # Hoặc NodePort cho local
   selector:

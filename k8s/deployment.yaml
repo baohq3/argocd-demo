@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argocd-demo-app
-  namespace: default
+  namespace: 13th
   labels:
     app: argocd-demo
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: your-dockerhub-username/argocd-demo:latest  # Thay đổi này
+        image: baohq3/argocd-demo:latest  # Thay đổi này
         ports:
         - containerPort: 80
         resources:
